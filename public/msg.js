@@ -2,8 +2,10 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const MsgSchema = new Schema({
-  text: String,
+  name: String,
+  email: String,
+  message: String
 });
-const Msg = mongoose.model("msg", MsgSchema);
+const Msg = mongoose.model("portfoliocontactdata", MsgSchema);
 
 module.exports = Msg;

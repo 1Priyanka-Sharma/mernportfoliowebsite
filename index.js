@@ -8,7 +8,7 @@ const mongoose = require("mongoose");
 
 mongoose
   .connect(
-    "mongodb+srv://test:hellotaejim@cluster0.k4syx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "mongodb+srv://test:hellotaejim@cluster0.k4syx.mongodb.net/portfolioWebsiteDatabase?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -32,16 +32,16 @@ app.set('view engine', 'hbs');
 // Routing
 app.get('', (req, res) => {
   res.render("index");
- })
+})
 
- app.post("/msg",  async function (req, res) {
-  const text  = req.body.name;
-console.log(text); 
- const newMSG = new MSGModel({
-   text: text.toString(),
- });
+app.post("/msg", async function (req, res) {
+  const { name, email, message } = req.body;
+  console.log(name + ' , ' + email + ' , ' + message);
+  const newMSG = new MSGModel({
+    name,email,message
+  });
 
- await newMSG.save();
+  await newMSG.save();
 });
 
 app.listen(process.env.PORT || 3000);
