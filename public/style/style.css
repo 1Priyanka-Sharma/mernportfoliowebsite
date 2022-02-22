@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Poppins&family=Roboto&family=Roboto+Slab&family=Spirax&family=Ubuntu&display=swap');
+
+/* 1.General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 58.5%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0 !important;
+}
+
+/* 2.Navbar */
+.navBar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    position: sticky !important;
+    top: 0;
+    z-index: 1;
+    overflow: hidden !important;
+}
+
+.navBar ul {
+    margin-bottom: 0rem !important;
+}
+
+/* 3.Logo */
+.logo {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+    padding-left: 20rem;
+}
+
+.initial {
+    border: 5px solid white;
+    border-radius: 1rem;
+    color: crimson;
+}
+
+.logo-2 {
+    color: crimson;
+}
+
+/* 4.Navlist-Menu */
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 1rem;
+    list-style: none;
+}
+
+.nav-list li a, .description a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Dongle', sans-serif;
+}
+
+.nav-list li a:hover {
+    border: 0.1px solid white;
+    border-radius: 6%;
+}
+
+/* Active menu */
+.active {
+    color: black;
+    border-radius: 6%;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 7.7rem;
+    background-color: #8268c3;
+}
+
+/* 5.Navbar Scrolling Effect */
+.scroll-nav-color {
+    background-color: crimson;
+}
+
+.scroll-nav-color span {
+    color: white;
+}
+
+.scroll-nav-color .initial {
+    border: 5px solid #312f75;
+
+}
+
+/* 6.Hamburger Icon */
+.min-bar {
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    display: none;
+}
+
+/* 7.Main content */
+#home {
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    padding: 10rem;
+}
+
+.main-article {
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+.heading-1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8rem;
+    background: linear-gradient(-224deg, #FD4766 30%, #337DFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.heading-2 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.heading-2 span {
+    color: crimson;
+    font-size: 4rem;
+}
+
+#home div {
+    align-self: center;
+}
+
+/* Profile pic */
+.profile-pic {
+    justify-self: center;
+    box-shadow: 0px 1px white;
+    border-radius: 50%;
+    padding: 2rem;
+    width: 53%;
+}
+
+.profile-pic-background {
+    clip-path: circle(50% at 50% 50%);
+    border-radius: 50%;
+    background-image: linear-gradient(224deg, #FD4766 30%, #337DFF 100%);
+    transition: transform 1.5s ease-in-out;
+}
+
+.profile-pic-background:hover {
+    transform: scale(1.09);
+}
+
+#home button {
+    color: white;
+    background-color: crimson;
+    padding: 1.5rem 2.5rem;
+    border: 2px solid crimson;
+    border-radius: 5%;
+    font-size: 2.3rem;
+    margin: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+#home button:hover {
+    color: crimson;
+    background-color: transparent;
+}
+
+#home button:focus {
+    color: white;
+    background-color: crimson;
+}
+
+/* Scroll-Up Buuton */
+#scroll-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 6rem;
+    color: crimson;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Quote */
+.quote {
+    text-align: center;
+    font-size: 5rem;
+    color: #667eea;
+    font-family: 'Spirax', cursive;
+    height: 7rem;
+    margin-top: 0;
+}
+
+/* About Section */
+.about-heading {
+    margin: 0 !important;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about-heading::after {
+    content: '----------\f505-----------';
+    font: normal normal normal 64px FontAwesome;
+    font-size: 2.5rem;
+}
+
+.index {
+    align-items: center;
+}
+
+/* Skills Section */
+#skills {
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-gap: 2rem;
+    padding: 15rem;
+    padding-bottom: 5rem;
+}
+
+.skill-heading {
+    margin: 0 !important;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skill-heading::after {
+    content: '----------\f7d9-----------';
+    font: normal normal normal 64px FontAwesome;
+    font-size: 2.5rem;
+}
+
+.skill-para {
+    font-family: 'Dongle', sans-serif;
+    font-size: 3rem;
+}
+
+/* Container displaying Skills */
+#skill-set {
+    align-self: flex-start;
+}
+
+.skill-container {
+    display: inline-block;
+    background-color: #8268c3;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+.skill-container .container {
+    padding-right: 122rem;
+}
+
+/* Days-block large-width */
+.large-width {
+    display: block;
+    margin-left: 0.1rem;
+}
+
+.large-width .title {
+    border-bottom: 1rem solid black;
+    margin: 0;
+}
+
+.description div>p {
+    color: black;
+    padding-top: 1rem;
+}
+
+.description a {
+    text-decoration: underline;
+    color: rgb(22, 22, 77);
+    padding: 0rem;
+}
+
+/* Days-block small size */
+.skill-normal-container {
+    margin-right: 1rem;
+}
+
+/* Partly-sunny */
+.vis-hide {
+    display: none !important;
+}
+
+/* Project Section */
+#projects {
+    display: grid;
+    grid-template-rows: 0.2fr 0.fr;
+    align-items: center;
+    padding: 15rem;
+    padding-bottom: 5rem;
+}
+
+.project-heading {
+    margin: 0 !important;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.project-heading::after {
+    content: '----------\f233-----------';
+    font: normal normal normal 64px FontAwesome;
+    font-size: 2.5rem;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1.2fr;
+    row-gap: 10rem;
+    grid-column-gap: 7rem;
+    min-height: auto;
+    padding-bottom: 6rem;
+}
+
+.project-list-item {
+    height: 60rem !important;
+    overflow: hidden;
+}
+
+.project-list-item .card {
+    height: 63%;
+    min-height: 250px !important;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-width: 0;
+}
+
+.project-list-item .card span {
+    transition: background-position 4s ease-in-out 0s;
+    height: 100%;
+    background-position: top center;
+    background-size: cover;
+}
+
+.project-list-item .card:hover span {
+    background-position: bottom center;
+}
+
+.project-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+}
+
+.project-para {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    color: black !important;
+    padding-bottom: 0.5rem;
+}
+
+.project-link {
+    font-family: 'Dongle', sans-serif;
+    text-decoration: underline;
+    font-size: 2.6rem;
+    font-weight: 900px;
+    color: rgb(0, 0, 0);
+}
+
+/* Contact Section */
+.contact-heading::after {
+    content: '-----------Get in touch-----------';
+    text-transform: capitalize;
+    font-size: 1.5rem !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feild {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon-size {
+    font-size: 2rem;
+}
+
+.tag {
+    background-color: crimson;
+    color: white;
+    border-radius: 4rem;
+}
+
+.duration {
+    background-color: crimson;
+    color: white;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    height: 3rem;
+    width: 11rem;
+    padding-left: 2rem;
+}
+
+.interest-width {
+    width: 15rem !important;
+}
+
+.quote-anim.animated {
+    opacity: 1;
+}
+
+@media (max-width: 1374px) {
+    #home {
+        gap: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1166px) {
+    #home {
+        grid-template-columns: 1fr 0.7fr;
+    }
+    .duration {
+        height: 4rem;
+    }
+    .project-list {
+        grid-template-columns: 1.2fr 1.2fr;
+        padding-bottom: 0rem !important;
+    }
+}
+
+@media (max-width: 1096px) {
+    .navBar {
+        grid-template-columns: 0.7fr 1.2fr;
+    }
+
+    .logo {
+        padding-left: 4rem;
+    }
+
+    html {
+        font-size: 46.5%
+    }
+
+    .duration {
+        padding-top: 1rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 570px) {
+    .profile-pic {
+        width: 50% !important;
+    }
+
+    .heading-2 {
+        margin: 0
+    }
+
+    .quote {
+        font-size: 3.6rem;
+    }
+
+    .about-container {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    #skills {
+        padding: 4rem;
+    }
+}
+
+/* This will fire when humburger icon is clicked */
+@media (max-width: 810px) {
+    .project-list {
+        grid-template-columns: 1.2fr;
+        padding-bottom: 0rem !important;
+    }
+
+    html {
+        font-size: 44.5%
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    #home {
+        grid-template-rows: 0.5fr 0.3fr !important;
+        grid-template-columns: 1fr;
+    }
+
+    .profile-pic {
+        width: 35%;
+        grid-row-start: 1;
+    }
+
+    .navBar {
+        grid-template-columns: 1fr;
+        height: 370px;
+        transition: all 0.4s ease-out;
+    }
+
+    .right-nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        padding-left: 4rem;
+    }
+
+    .logo-res {
+        margin: auto;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .nav-list li {
+        margin: 0.8rem 0rem;
+    }
+
+    .btn {
+        display: block;
+        margin: 0.6rem auto;
+    }
+
+    .min-bar {
+        display: block;
+        top: 1.7rem;
+    }
+
+    .h-nav-res {
+        height: 53.2px;
+    }
+
+    .v-hidden-res {
+        opacity: 0;
+    }
+
+    .product1 {
+        flex-direction: column-reverse;
+    }
+
+    .product1-content {
+        text-align: center;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}

@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+
+    <!-- Tailwind CSS link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome link -->
+    <script src="https://kit.fontawesome.com/2766b64c31.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- My Stylesheet -->
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <!-- navbar=Logo+Menu =10-->
+    <nav class="navBar h-nav-res">
+        <!-- Logo -->
+        <!-- <ul class="logo v-hidden-res"> -->
+        <ul class="logo">
+            <span class="initial">PS</span> Portfo<span class="logo-2">lio.</span>
+        </ul>
+        <!-- Menu -->
+        <ul class="nav-list v-hidden-res">
+            <li> <a href="#home" class="menu active">Home</a></li>
+            <li> <a href="#about" class="menu">About</a></li>
+            <li><a href="#skills" class="menu">Skills</a></li>
+            <li><a href="#projects" class="menu">Projects</a></li>
+            <li> <a href="#hireme" class="menu">Hire Me</a></li>
+        </ul>
+        <!-- Hamburger Icon -->
+        <i class="fas fa-bars  min-bar"></i>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <!-- Introduction -->
+        <article class="main-article">
+            <div class="heading-1">
+                <h3>Welcome to my world</h3>
+            </div>
+            <div class="heading-2">
+                <h1>I'm Priyanka Sharma <br><span> Enthusiast Web Developer</span></h1>
+            </div>
+            <div>
+                <p style="text-align: center;"> Knack of building applications with front and back end technologies.
+                </p>
+            </div>
+            <div>
+                <button> <a href="#hireme"> Hire me</a></button>
+            </div>
+        </article>
+
+        <!-- Profile pic -->
+        <div class="profile-pic">
+            <img class='profile-pic-background' src="/images/mypic.png" alt="profile-pic">
+        </div>
+    </section>
+
+    <!-- Wave -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#000000" fill-opacity="1"
+            d="M0,128L60,122.7C120,117,240,107,360,128C480,149,600,203,720,197.3C840,192,960,128,1080,112C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+        </path>
+    </svg>
+
+    <!-- Scroll-Up Button -->
+    <i id="scroll-top" class="fas fa-chevron-circle-up"></i>
+
+    <!-- Quote-1 -->
+    <div class="quote quote-anim">"Be in top 1% of the world."</div>
+
+    <!-- About Section -->
+    <section id="about" style="padding-top: 7rem;">
+        <!-- Heading -->
+        <div class="heading-1 about-heading ">
+            <h1>About Me</h1>
+        </div>
+
+        <!-- About's Content Container -->
+        <div class="row mx-0 px-12 py-12  about-container">
+            <div class="col-md-6">
+                <div class="card" style="border-style: none !important;">
+                    <div class="card-body">
+                        <!-- Different Heading Tags -->
+                        <div class=" flex flex-wrap flex-col index">
+                            <!-- Education Tag -->
+                            <div class="flex relative pb-12 category" style="left: -1rem;">
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex mx-2 items-center justify-center ">
+                                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                                </div>
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-800 inline-flex items-center justify-center text-white relative   icon-size tag">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <!-- Tag -->
+                                <div class="flex-grow pl-4 py-2 my-auto tag-heading tag">
+                                    <h2 class="font-medium text-3xl mb-1 tracking-wider">Education</h2>
+                                </div>
+                            </div>
+
+                            <!-- Work History Tag -->
+                            <div class="flex relative pb-12 category">
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0  mx-2 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                                </div>
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-800 inline-flex items-center justify-center text-white relative   icon-size">
+                                    <i class="fas fa-history"></i>
+                                </div>
+                                <!-- Tag -->
+                                <div class="flex-grow pl-4 py-2 my-auto tag-heading">
+                                    <h2 class="font-medium text-3xl mb-1 tracking-wider ">Work History</h2>
+                                </div>
+                            </div>
+
+                            <!-- Interest Tag -->
+                            <div class="flex relative category" style="left: -2rem;">
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-800 inline-flex items-center justify-center text-white relative   icon-size">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <!-- Tag -->
+                                <div class="flex-grow pl-4 py-2 my-auto tag-heading">
+                                    <h2 class="font-medium text-3xl mb-1 tracking-wider">Interests</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="card" style="border-style: none !important;">
+                    <div class="card-body">
+                        <div class=" category-des ">
+
+                            <!-- Education-1 degree  Description -->
+                            <div class="flex relative pb-12">
+
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 flex" style="font-size: 1.5rem;">
+                                    <div>
+                                        <h2 class="font-bold  mb-1 tracking-wider">Bachelor Of Computer Science(H)</h2>
+                                        <p class="leading-relaxed">Mata Sundri College for Women</p>
+                                        <p class="leading-relaxed">University of Delhi</p>
+                                        <p class="leading-relaxed">CGPA: 9.135</p>
+                                    </div>
+                                    <div class="duration tag">
+                                        <h1>2017-2020</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Education-12th School Description -->
+                            <div class="flex relative pb-12">
+
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 flex" style="font-size: 1.5rem;">
+                                    <div>
+                                        <h2 class="font-bold  mb-1 tracking-wider">12th Boards</h2>
+                                        <p class="leading-relaxed">Fatima Convent Sr. Secondary School</p>
+                                        <p class="leading-relaxed">UP</p>
+                                        <p class="leading-relaxed">86.80%</p>
+                                    </div>
+                                    <div class="duration tag">
+                                        <h1>2016-2017</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Education-10th School Description -->
+                            <div class="flex relative pb-12">
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 flex" style="font-size: 1.5rem;">
+                                    <div>
+                                        <h2 class="font-bold mb-1 tracking-wider">10th Boards</h2>
+                                        <p class="leading-relaxed">Fatima Convent Sr. Secondary School</p>
+                                        <p class="leading-relaxed">UP</p>
+                                        <p class="leading-relaxed">85.16%</p>
+                                    </div>
+                                    <div class="duration tag">
+                                        <h1>2014-2015</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Work History Tags's description -->
+                        <div class=" category-des   vis-hide">
+
+                            <!-- Work-TCS  Description -->
+                            <div class="flex relative pb-12">
+
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 flex" style="font-size: 1.5rem;">
+                                    <div>
+                                        <h2 class="font-bold  mb-1 tracking-wider">User Access Management Trainee</h2>
+                                        <p class="leading-relaxed">Tata Consultancy Service Limited</p>
+                                        <p class="leading-relaxed">
+                                            <li> Performs ticket management and participate in project meetings.</li>
+                                            <li> This includes work on Active Directory, Service Desk Management and
+                                                different
+                                                servers.</li>
+                                        </p>
+                                    </div>
+                                    <div class="duration tag">
+                                        <h1>2021-2022</h1>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Work-Trimitr Description -->
+                            <div class="flex relative pb-12">
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 flex" style="font-size: 1.5rem;">
+                                    <div>
+                                        <h2 class="font-bold  mb-1 tracking-wider">Software Developer</h2>
+                                        <p class="leading-relaxed">Trimitr Technologies Private Limited</p>
+                                        <p class="leading-relaxed">
+                                            <li>Participated in requirements gathering for the 'Residential Suite'
+                                                project.</li>
+                                            <li> Learned the technologies of Front-end web development such as HTML,
+                                                CSS, JavaScript
+                                                and Bootstrap.</li>
+                                            <li> Created responsive web pages.</li>
+                                            <li>Learned the technologies of Back-end web development such as Node.JS and
+                                                React
+                                                Framework.</li>
+                                            <li>Learned and worked on Web APIs.</li>
+                                        </p>
+                                    </div>
+                                    <div class=" duration interest-width">
+                                        <h1>2months(2019)</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Interest Tags's description -->
+                        <div class=" category-des  vis-hide">
+
+                            <!-- Interest-1  Description -->
+                            <div class="flex relative pb-12">
+
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 " style="font-size: 1.5rem;">
+                                    <h2 class="font-bold  mb-1 tracking-wider">Singing and Dancing</h2>
+                                    <p class="leading-relaxed">My favourite is <strong>BTS</strong>(a K-POP group).
+                                        <br>I
+                                        specifically like songs such as <strong>'Permission To
+                                            Dance','Butter'</strong>,etc.<br> Its
+                                        music will instinctive let you dance. Also, it has the potential to make your
+                                        day.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Interest-2  Description -->
+                            <div class="flex relative pb-12">
+
+                                <!-- Connecting Line -->
+                                <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
+                                    <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                </div>
+
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative  ">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 " style="font-size: 1.5rem;">
+                                    <!-- Singing,Reading,dancing, -->
+                                    <h2 class="font-bold  mb-1 tracking-wider">Reading</h2>
+                                    <p class="leading-relaxed">I prefer <strong>adventure fiction</strong> such as
+                                        <strong>'Alchemist', 'Harry Potter Collection','Think and Grow
+                                            Rich',etc.</strong> <br>Books
+                                        just grab attention and help you increse your concentration and imagination
+                                        power.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Interest-3  Description -->
+                            <div class="flex relative pb-12">
+                                <!-- Icon -->
+                                <div
+                                    class="flex-shrink-0 w-10 h-10 rounded-full bg-indigo-500 inline-flex items-center justify-center text-white relative">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="flex-grow pl-4 " style="font-size: 1.5rem;">
+                                    <h2 class="font-bold  mb-1 tracking-wider">Fitness Freak</h2>
+                                    <p class="leading-relaxed">I love everything about health. I keep a close watch on
+                                        what I eat
+                                        and maintains a proper schedule of my physical exercise.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <div class="quote">"I am physically fit and mentally strong."</div>
+
+    <!-- Skill Section -->
+    <section id="skills" style="padding-top: 7rem;">
+        <div class="heading-1 skill-heading">
+            <h1>My creative skills</h1>
+        </div>
+        <div class="skill-para ">
+            <p> I am a <strong> self-taught developer</strong>. In this journey, I developed habits such as:
+                <li> To write <strong>clean and maintainable</strong> code.</li>
+                <li>To <strong> learn just enough</strong>.</li>
+                <li>To <strong> generate products</strong>.</li>
+                <li>Repeat steps 2 and 3.</li>
+            </p>
+        </div>
+        <div id="skill-set">
+            <!-- common-  ,skill-container -->
+            <div class=" mt-3 text-light skill-container large-width  ">
+                <div class="row p-3 title">
+                    <strong> JAVASCRIPT</strong>
+                </div>
+                <div class="row ps-3 pb-3 description ">
+                    <p> an object-oriented computer programming language commonly used to create
+                        interactive effects within web browsers.</p>
+                    <div>
+                        <p> function fun(){<br>
+                            console.log('Hello World, coding is fun');<br>
+                            }</p>
+                        <a href="https://www.w3schools.com/js/">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2-margin-adjust,skill-normal-container -->
+            <!-- <span> -->
+            <div class="  mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> HTML</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> The HyperText Markup Language, or HTML is the standard markup language for documents designed to
+                        be displayed in a web browser.</p>
+                    <div>
+                        <p> &lt;a href="hope.html"&gt;<br>
+                            Computer Hope <br>
+                            &lt;/a&gt;</p>
+                        <a href="https://www.freecodecamp.org/news/what-is-html-definition-and-meaning/">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="  mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> CSS</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Cascading Style Sheets is a style sheet language used for describing the presentation of a
+                        document written in a markup language such as HTML</p>
+                    <div>
+                        <p> .element{<br>
+                            font-family: cursive;<br>
+                            }
+                        </p>
+                        <a href="https://youtu.be/Edsxf_NBFrw">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> BOOTSTRAP</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end
+                        web development.</p>
+                    <div>
+                        <p> &lt;div class="alert alert-success"&gt;<br>
+                            <strong>Success!</strong> I am a coder.<br>
+                            &lt;/div&gt;
+                        </p>
+                        <a href="https://youtu.be/vpAJ0s5S2t0">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> TAILWIND CSS</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90
+                        that can be
+                        composed to build any design, directly in your markup.</p>
+                    <div>
+                        <p>bg-white, shadow, rounded
+                        </p>
+                        <a href="https://tailwindcss.com/docs/installation">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> NODE.JS</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on
+                        the V8 engine and executes JavaScript code outside a web browser.</p>
+                    <div>
+                        <p> http.createServer(function (req, res) {<br>
+                            res.writeHead(200, {'Content-Type': 'text/html'});<br>
+                            res.end('Hello World!');<br>
+                            }).listen(8080);</p>
+                        <a href="https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> REACT</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> React is a free and open-source front-end JavaScript library for building user interfaces based
+                        on UI components.</p>
+                    <div>
+                        <p> npx create-react-app my-app<br>
+                            cd my-app<br>
+                            npm start</p>
+                        <a href="https://reactjs.org/community/examples.html">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> MONGODB</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> MongoDB is a source-available cross-platform document-oriented database program. Classified as a
+                        NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+                    <div>
+                        <p> db.dropDatabase()<br>
+                            use mydb<br>
+                            show dbs <br></p>
+                        <a href="https://www.geeksforgeeks.org/what-is-mongodb-working-and-features/">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> OOPS</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Object-oriented programming is a programming paradigm based on the concept of "objects", which
+                        can contain data and code: data in the form of fields, and code, in the form of procedures.</p>
+                    <div>
+                        <p> Encapsulation<br>
+                            Polymorphism<br>
+                            Inheritance</p>
+                        <a href="https://www.geeksforgeeks.org/object-oriented-programming-oops-concept-in-java/">Explore
+                            Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container  skill-list ">
+                <div class="row p-3 title">
+                    <strong> OPERATING SYSTEM</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> An operating system is system software that manages computer hardware, software resources, and
+                        provides common services for computer programs.</p>
+                    <div>
+                        <p> Time-Sharing Operating Systems <br>
+                            Distributed Operating System <br>
+                            Network Operating System <br>
+                            Real-Time Operating System </p>
+                        <a href="https://www.tutorialspoint.com/operating_system/os_overview.htm">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> GIT & GITHUB</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Git is a version control system that lets you manage and keep track of your source code history.
+                        GitHub is a cloud-based hosting service that lets you manage Git repositories. </p>
+                    <div>
+                        <p> git status<br>
+                            git commit<br>
+                            git push</p>
+                        <a href="https://docs.github.com/en/get-started/using-git/about-git">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> DATA STRUCTURE & ALGORITHMS</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Data structures are objects generated to store data and algorithms are a set of instructions to
+                        perform specific task by using the data structures.</p>
+                    <div>
+                        <p> Stack<br>
+                            Queue<br>
+                            Array</p>
+                        <a href="https://www.geeksforgeeks.org/data-structures/">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" mt-3 text-light skill-container margin-adjust skill-normal-container   skill-list">
+                <div class="row p-3 title">
+                    <strong> VISUAL STUDIO CODE</strong>
+                </div>
+                <div class="row ps-3 pb-3 description vis-hide">
+                    <p> Visual Studio Code is a streamlined code editor with support for development operations like
+                        debugging, task running, and version control.</p>
+                    <div>
+                        <p> mkdir hello<br>
+                            cd hello<br>
+                            code. </p>
+                        <a href="https://code.visualstudio.com/docs">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- </span> -->
+        </div>
+    </section>
+
+    <!-- Quote -->
+    <div class="quote">"Live your day up to 100% of your potential."</div>
+
+    <!-- Project Section-->
+    <section class="container px-5 py-24" id="projects" style="padding-top: 7rem;">
+
+        <!-- Project Heading -->
+        <div class="flex flex-col heading-1 project-heading">
+            <h1>My Projects</h1>
+        </div>
+
+        <!-- Projects List -->
+        <div class=" mt-5 project-list">
+
+            <!-- Project-1 -->
+            <div class='project-list-item'>
+                <div class="card ">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project-2 -->
+            <div class='project-list-item'>
+                <div class="card">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on
+                            Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project-3 -->
+            <div class='project-list-item'>
+                <div class="card">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on
+                            Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project-4 -->
+            <div class='project-list-item'>
+                <div class="card">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on
+                            Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project-5 -->
+            <div class='project-list-item'>
+                <div class="card">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on
+                            Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project-6 -->
+            <div class='project-list-item'>
+                <div class="card">
+                    <span style="background-image: url('/images/amazon.jpg')"></span>
+                </div>
+                <div>
+                    <h2 class="font-black text-red-600  mt-5 project-title">Weather At Your Moment</h2>
+                    <p>
+                        <li class="project-para"> An Open Weather API based application for real-time weather
+                            information on
+                            Maps with
+                            additional functionalities using the front- end
+                            technologies like-HTML, CSS, JavaScript, Bootstrap.</li>
+                        <li class="project-para">Used Fetch API in making connections, JSON Parsing, etc.</li>
+                    </p>
+                    <a class="mt-1 project-link" href="" target="_blank">Experience Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote-1 -->
+    <div class="quote">"Good vibes only."</div>
+
+    <!-- Contact Section -->
+    <section class="container px-5 py-22 mx-auto" id="hireme" style="padding-top: 7rem;">
+
+        <!-- Contact Heading -->
+        <div class="flex flex-col items-center text-center w-full ">
+            <h1 class="flex flex-col font-extrabold heading-1 skill-heading contact-heading">Hire Me</h1>
+        </div>
+
+        <!-- Contact Form -->
+        <form action="/mconn" method="post">
+            <div class="lg:w-1/2 md:w-2/3 mx-auto ">
+                <div class="flex flex-wrap -m-2">
+                    <!-- Name -->
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <input type="text" id="name" name="name" required placeholder="Your Name"
+                                class="w-full px-8 py-1 rounded-full bg-gray-100 outline-none border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-8 transition-colors duration-200 ease-in-out feild">
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="p-2 w-1/2">
+                        <div class="relative">
+                            <input type="email" id="email" name="email" required placeholder="Your Email"
+                                class="w-full px-8 py-1 rounded-full bg-gray-100 outline-none border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-8 transition-colors duration-200 ease-in-out feild">
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="p-2 w-full">
+                        <div class="relative">
+                            <!-- resize-none leading-6 h-32-->
+                            <textarea id="message" name="message" required placeholder="Your Message"
+                                class="w-full px-8 py-1 h-32 resize-none leading-2 rounded-full bg-gray-100 outline-none border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-8 transition-colors duration-200 ease-in-out feild"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="p-2 w-full">
+                        <button type="submit" name="submit"
+                            class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded-full feild submit">Submit</button>
+                    </div>
+                    <!-- Mail-Id and Phone Number -->
+                    <div class="p-2 w-full pt-8 mt-8 border-t border-gray-400 text-center text-indigo-500 ">
+                        <a target="_blank"> <i class="fas fa-envelope"> mepriya1508@gmail.com </i></a><br>
+                        <p> <i class="fas fa-mobile-alt"> 9267921541 </i></p>
+
+                        <!-- Social Network -->
+                        <span class="inline-flex  mt-1 text-2xl">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/priyanka-sharma-56b30a1a5" target="_blank">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24"><i class="fab fa-linkedin "></i>
+                                </svg>
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/1Priyanka-Sharma" target="_blank" class="ml-2">
+                                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    class="w-5 h-5" viewBox="0 0 24 24"><i class="fab fa-github-square"></i>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class=" body-font text-white mt-5">
+        <div class="container py-3  flex">
+            <p class="text-2xl  mx-auto sm:ml-4 sm:pl-4  sm:py-2 sm:mt-0">
+                <span class="sm:border-r-2 sm:border-gray-200"> Created By <span class="logo-2"> Priyanka Sharma</span>
+                </span>
+                &copy; 2020 All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    {{!-- Bootstrap file --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- My js file -->
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
