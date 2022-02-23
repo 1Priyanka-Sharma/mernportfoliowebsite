@@ -6,6 +6,6 @@ const MsgSchema = new Schema({
   email: String,
   message: String
 });
-const Msg = mongoose.model("portfoliocontactdata", MsgSchema);
+const Msg = mongoose.model("portfolioContactData", MsgSchema);
 
 module.exports = Msg;
