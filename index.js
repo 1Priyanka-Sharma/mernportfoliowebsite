@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express");
 const app = express();
 
@@ -6,9 +7,14 @@ const logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+console.log(process.env.SECRET_KEY);
+console.log(process.env.DATABASE_NAME);
+let password=process.env.SECRET_KEY;
+let databaseName=process.env.DATABASE_NAME;
+
 mongoose
   .connect(
-    "mongodb+srv://test:hellotaejim@cluster0.k4syx.mongodb.net/portfolioWebsiteDatabase?retryWrites=true&w=majority",
+    "mongodb+srv://test:process.env.SECRET_KEY@cluster0.k4syx.mongodb.net/process.env.DATABASE_NAME?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
