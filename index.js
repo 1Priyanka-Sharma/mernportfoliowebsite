@@ -6,6 +6,7 @@ const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
+var nodemailer = require('nodemailer');
 
 const db = process.env.DATABASE;
 
@@ -43,6 +44,31 @@ app.post("/msg", async function (req, res) {
 
     await newMSG.save();
     res.render("index", { content: 'Thank You. Your response is recorded.' });
+
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'kpriyas1256@gmail.com',
+    pass: 'gcnqqjjqledogqhm'
+  }
+});
+
+var mailOptions = {
+  from: 'kpriyas1256@gmail.com',
+  to: 'kpriyas1256@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: 'That was easy!'
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+
   }
   catch (error) {
     console.log("Error" + error.message);
@@ -51,3 +77,6 @@ app.post("/msg", async function (req, res) {
 
 app.listen(process.env.PORT || 3000);
 module.exports = app;
+
+
+
