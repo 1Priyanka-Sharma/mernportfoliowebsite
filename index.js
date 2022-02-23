@@ -35,13 +35,18 @@ app.get('', (req, res) => {
 })
 
 app.post("/msg", async function (req, res) {
-  const { name, email, message } = req.body;
-  console.log(name + ' , ' + email + ' , ' + message);
-  const newMSG = new MSGModel({
-    name,email,message
-  });
+  try {
+    const { name, email, message } = req.body;
+    const newMSG = new MSGModel({
+      name, email, message
+    });
 
-  await newMSG.save();
+    await newMSG.save();
+    res.render("index", { content: 'Thank You. Your response is recorded.' });
+  }
+  catch (error) {
+    console.log("Error" + error.message);
+  }
 });
 
 app.listen(process.env.PORT || 3000);

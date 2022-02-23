@@ -401,6 +401,10 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.form-response-family{
+    font-family: 'Ubuntu', sans-serif;
+}
+
 .feild {
     font-size: 1.6rem;
     line-height: 3rem;
