@@ -5,8 +5,27 @@ section = document.querySelectorAll('section');
 logo = document.querySelector('.logo');
 scrolltop = document.getElementById('scroll-top');
 responseMsg = document.getElementById('form-response-family');
+like = document.getElementById('like');
+let likeCount = 0;
 
-setTimeout(()=>{responseMsg.parentNode.removeChild(responseMsg)},3000);
+// Submit->Response message
+setTimeout(() => { responseMsg.parentNode.removeChild(responseMsg) }, 3000);
+
+// Like Button Functionality
+like.addEventListener('click', () => {
+    ++likeCount;
+    if (likeCount % 2 != 0) {
+        localStorage.setItem('like', 'y');
+        like.style.color = 'crimson';
+        like.style.fontSize = "4rem";
+    }
+    else {
+        localStorage.setItem('like', 'n');
+        like.style.color = 'black';
+        like.style.fontSize = "3rem";
+    }
+})
+
 
 // Main Menu->Click Event
 let menu = document.getElementsByClassName('menu');
@@ -21,6 +40,14 @@ menu.forEach((item) => {
 })
 
 window.onload = () => {
+    // Like button-onload time
+    likeValue = localStorage.getItem('like');
+    if (likeValue == 'y') {
+        like.style.color = 'crimson';
+        like.style.fontSize = "4rem";
+        likeCount = 1;
+    }
+
     window.onscroll = (() => {
         // menu highlight on scroll
         len = section.length;
