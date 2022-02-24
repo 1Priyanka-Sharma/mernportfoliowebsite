@@ -4,6 +4,9 @@ navlist = document.querySelector('.nav-list');
 section = document.querySelectorAll('section');
 logo = document.querySelector('.logo');
 scrolltop = document.getElementById('scroll-top');
+responseMsg = document.getElementById('form-response-family');
+
+setTimeout(()=>{responseMsg.parentNode.removeChild(responseMsg)},3000);
 
 // Main Menu->Click Event
 let menu = document.getElementsByClassName('menu');

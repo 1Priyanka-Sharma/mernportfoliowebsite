@@ -5,18 +5,9 @@ const app = express();
 const path = require("path");
 const logger = require("morgan");
 const cors = require("cors");
-const mongoose = require("mongoose");
 const nodemailer = require('nodemailer');
+require('./mconnection.js');
 const MSGModel = require("./public/msg");
-
-const db = process.env.DATABASE;
-
-mongoose.connect(db, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-  .then(() => console.log("database connected"))
-  .catch((err) => console.log(err));
 
 app.use(logger("dev"));
 app.use(express.json());

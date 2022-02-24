@@ -101,7 +101,7 @@ body {
 .min-bar {
     position: absolute;
     right: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     display: none;
 }
@@ -401,7 +401,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.form-response-family{
+#form-response-family{
     font-family: 'Ubuntu', sans-serif;
 }
 
